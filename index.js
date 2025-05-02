@@ -32,6 +32,7 @@ app.get('/sobre', (req, res) => res.render('sobre'));
 app.get('/servicos', (req, res) => res.render('servicos'));
 app.get('/mensagem', (req, res) => res.render('mensagem'));
 app.get('/contato', (req, res) => res.render('contato'));
+app.get('/classificador', (req, res) => res.render('classificador'));
 
 // Página inicial
 app.get('/', (req, res) => {
@@ -112,6 +113,11 @@ app.post('/update', (req, res) => {
     }, { new: true })
         .then(() => res.redirect(`/mensagens/${req.body.id}`))
         .catch(err => res.send("Erro ao atualizar: " + err));
+});
+
+// Exibir formulário de classificação
+app.get('/classificador', (req, res) => {
+    res.render('classificador');
 });
 
 // Classificador de empresas

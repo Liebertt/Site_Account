@@ -1,197 +1,143 @@
 <body>
-    <!-- POPUP para classificador -->
-<div class="popup-classificador">
-  <p><strong>👋 Quer abrir uma empresa?</strong></p>
-  <a href="/classificador">Clique aqui para saber o tipo ideal para você</a>
-  <button class="close-popup" onclick="fecharPopup()">×</button>
+  <!-- POPUP para classificador -->
+  <div class="popup-classificador">
+  <div class="popup-conteudo">
+    <p><strong>👋 Quer abrir uma empresa?</strong></p>
+    <a href="/classificador">Clique aqui para saber o tipo ideal para você</a>
+    <button class="close-popup" onclick="fecharPopup()">×</button>
+  </div>
 </div>
 
-<style>
-  .popup-classificador {
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    background-color: #f8f9fa;
-    padding: 20px 20px 10px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-    font-family: 'Segoe UI', sans-serif;
-    z-index: 1000;
-    animation: aparecer 0.6s ease;
-    max-width: 300px;
-  }
 
-  .popup-classificador a {
-    display: inline-block;
-    margin-top: 5px;
-    color: #007BFF;
-    font-weight: 600;
-    text-decoration: none;
-  }
+  <div class="container">
+    <div class="jumbotron">
+      <div class="container">
+        <img src="img/logo.png" alt="logo" width="60" height="60" class="d-block mx-auto">
+        <h1 class="text-center">Moraes Contabilidade</h1>
+      </div>
 
-  .popup-classificador a:hover {
-    text-decoration: underline;
-  }
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top container justify-content-center">
+        <a class="navbar-brand" href="/">Moraes Contabilidade</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="/">Home <span class="sr-only">(Página atual)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/sobre">Quem Somos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contato">Contato</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/servicos">Nossos Contadores</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
 
-  .close-popup {
-    position: absolute;
-    top: 5px;
-    right: 10px;
-    border: none;
-    background: transparent;
-    font-size: 20px;
-    line-height: 1;
-    color: #888;
-    cursor: pointer;
-  }
+      <h3 class="table-dark">Nossas Redes Sociais</h3>
+      <a href="https://www.facebook.com" target="_blank">
+        <button type="button" class="btn btn-primary btn-sm">Facebook</button>
+      </a>
+      <a href="https://www.instagram.com" target="_blank">
+        <button type="button" class="btn btn-outline-warning">Instagram</button>
+      </a>
+      <a href="https://www.twitter.com" target="_blank">
+        <button type="button" class="btn btn-secondary btn-sm">Twitter</button>
+      </a>
+      <a href="https://www.linkedin.com" target="_blank">
+        <button type="button" class="btn btn-outline-primary">Linkedin</button>
+      </a>   
+      <br><br>
 
-  @keyframes aparecer {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
-</style>
+      <div class="img">
+        <img src="img/mesa escritorio.jpg" alt="mesa" width="1052" height="380" class="img-fluid">
+        <div class="text-center">
+          <h3>Moraes Contabilidade</h3>
+          <p class="text-monospace">Contabilidade eficiente e humanizada une expertise técnica com empatia, tornando as finanças mais acessíveis e compreensíveis para todos.</p>
+        </div>
+      </div>
+      <br>
 
-  .close-popup {
-    position: absolute;
-    top: 5px;
-    right: 10px;
-    border: none;
-    background: transparent;
-    font-size: 20px;
-    line-height: 1;
-    color: #888;
-    cursor: pointer;
-  }
+      <div class="row">
+        <div class="col-md-8">
+          <div class="media">
+            <video controls autoplay class="img-fluid">
+              <source src="img/video.mp4" type="video/mp4">
+              Seu navegador não suporta o elemento de vídeo.
+            </video>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="media-body">
+            <h2 class="mt-0 table-dark text-center">Comprometimento e Segurança</h2>
+            <br>
+            <p>Maximize o potencial de sua empresa com nossos serviços de contabilidade excepcionais. Oferecemos expertise, eficiência e compromisso inigualáveis para impulsionar seu sucesso financeiro. Contrate-nos hoje e alcance novas alturas.</p>
+            <p>Nosso comprometimento absoluto com a precisão e conformidade é a base de nossa empresa de contabilidade. Além disso, garantimos a segurança dos seus dados financeiros para que você possa focar no crescimento.</p>
+          </div>
+        </div>
+      </div>
+      <br>
 
-  @keyframes aparecer {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
+      <h1 class="table-dark">Nossos Principais Serviços</h1>
+      
+      <div class="card-deck">
+        <div class="card">
+          <img class="card-img-top" src="img/plano-negocio.jpg" alt="plano negocio" width="80" height="120">
+          <div class="card-body">
+            <h5 class="card-title">Planejamento Financeiro</h5>
+            <p class="card-text">O planejamento financeiro guia a empresa para atingir metas financeiras, controlando gastos, otimizando recursos e garantindo estabilidade econômica.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Registro e controle de transações financeiras; Elaboração e análise de demonstrações financeiras; Planejamento tributário; Contabilidade de custos; Auditoria interna.</small>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top" src="img/reuniao.jpg" alt="Imagem de capa do card" width="80" height="120">
+          <div class="card-body">
+            <h5 class="card-title">Departamento Pessoal</h5>
+            <p class="card-text">O departamento pessoal gerencia contratações, folha de pagamento, benefícios, registros trabalhistas e assegura o cumprimento das obrigações legais relacionadas aos funcionários.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Admissão de Funcionários; Elaboração de Folha de Pagamento; Registro de Ponto; Administração de Benefícios; Gestão de Férias e Licenças; Conformidade Legal; Rescisão de Contratos; Gerenciamento de Registros.</small>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top" src="img/pessoas-trabalhando.jpg" alt="Imagem de capa do card" width="80" height="120">
+          <div class="card-body">
+            <h5 class="card-title">Consultoria Tributária</h5>
+            <p class="card-text">Maximiza economia fiscal, oferece conformidade fiscal, orientação estratégica, e otimiza o planejamento tributário para empresas, garantindo eficiência financeira.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Planejamento Tributário; Análise de Riscos Fiscais; Orientação Fiscal; Preparação e Revisão de Declarações Fiscais; Gestão de Benefícios Fiscais; Resolução de Conflitos Fiscais; Atualizações Legais; Estratégias de Expansão; Treinamento Interno.</small>
+          </div>
+        </div>
+      </div>
+      <br>
+      <hr>
+    </div>
 
+    <p class="table-dark text-center text-justify">Av. Nações Unidas, 10.088 - Pinheiros - São Paulo - SP. Telefone: (11) 3000-3000 - Email: moraes.contabilidade@email.com.</p>
+  </div>
 
-<script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script>
+  // Função para fechar o pop-up
   function fecharPopup() {
     document.querySelector('.popup-classificador').style.display = 'none';
   }
+
+  // Exibir o pop-up quando a página carregar
+  window.onload = function() {
+    document.querySelector('.popup-classificador').style.display = 'block';
+  };
 </script>
-
-    <div class="container">
-        <div class="jumbotron">
-            <div class="container">
-                <img src="img/logo.png" alt="logo" width="60" height="60" class="d-block mx-auto">
-                <h1 class="text-center">Moraes Contabilidade</h1>
-            </div>
-
-            <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top container justify-content-center">
-                <a class="navbar-brand" href="/">Moraes Contabilidade</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="/">Home <span class="sr-only">(Página atual)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/sobre">Quem Somos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/contato">Contato</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/servicos">Nossos Contadores</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-
-            <h3 class="table-dark">Nossas Redes Sociais</h3>
-            <a href="https://www.facebook.com" target="_blank">
-                <button type="button" class="btn btn-primary btn-sm">Facebook</button>
-            </a>
-            <a href="https://www.instagram.com" target="_blank">
-                <button type="button" class="btn btn-outline-warning">Instagram</button>
-            </a>
-            <a href="https://www.twitter.com" target="_blank">
-                <button type="button" class="btn btn-secondary btn-sm">Twitter</button>
-            </a>
-            <a href="https://www.linkedin.com" target="_blank">
-                <button type="button" class="btn btn-outline-primary">Linkedin</button>
-            </a>   
-            <br><br>
-
-            <div class="img">
-                <img src="img/mesa escritorio.jpg" alt="mesa" width="1052" height="380" class="img-fluid">
-                <div class="text-center">
-                    <h3>Moraes Contabilidade</h3>
-                    <p class="text-monospace">Contabilidade eficiente e humanizada une expertise técnica com empatia, tornando as finanças mais acessíveis e compreensíveis para todos.</p>
-                </div>
-            </div>
-            <br>
-
-            <div class="row">
-                <div class="col-md-8">
-                    <div class="media">
-                        <video controls autoplay class="img-fluid">
-                            <source src="img/video.mp4" type="video/mp4">
-                            Seu navegador não suporta o elemento de vídeo.
-                        </video>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="media-body">
-                        <h2 class="mt-0 table-dark text-center">Comprometimento e Segurança</h2>
-                        <br>
-                        <p>Maximize o potencial de sua empresa com nossos serviços de contabilidade excepcionais. Oferecemos expertise, eficiência e compromisso inigualáveis para impulsionar seu sucesso financeiro. Contrate-nos hoje e alcance novas alturas.</p>
-                        <p>Nosso comprometimento absoluto com a precisão e conformidade é a base de nossa empresa de contabilidade. Além disso, garantimos a segurança dos seus dados financeiros para que você possa focar no crescimento.</p>
-                    </div>
-                </div>
-            </div>
-            <br>
-            
-            <h1 class="table-dark">Nossos Principais Serviços</h1>
-            
-            <div class="card-deck">
-                <div class="card">
-                    <img class="card-img-top" src="img/plano-negocio.jpg" alt="plano negocio" width="80" height="120">
-                    <div class="card-body">
-                        <h5 class="card-title">Planejamento Financeiro</h5>
-                        <p class="card-text">O planejamento financeiro guia a empresa para atingir metas financeiras, controlando gastos, otimizando recursos e garantindo estabilidade econômica.</p>
-                    </div>
-                    <div class="card-footer">
-                        <small class="text-muted">Registro e controle de transações financeiras; Elaboração e análise de demonstrações financeiras; Planejamento tributário; Contabilidade de custos; Auditoria interna.</small>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-img-top" src="img/reuniao.jpg" alt="Imagem de capa do card" width="80" height="120">
-                    <div class="card-body">
-                        <h5 class="card-title">Departamento Pessoal</h5>
-                        <p class="card-text">O departamento pessoal gerencia contratações, folha de pagamento, benefícios, registros trabalhistas e assegura o cumprimento das obrigações legais relacionadas aos funcionários.</p>
-                    </div>
-                    <div class="card-footer">
-                        <small class="text-muted">Admissão de Funcionários; Elaboração de Folha de Pagamento; Registro de Ponto; Administração de Benefícios; Gestão de Férias e Licenças; Conformidade Legal; Rescisão de Contratos; Gerenciamento de Registros.</small>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-img-top" src="img/pessoas-trabalhando.jpg" alt="Imagem de capa do card" width="80" height="120">
-                    <div class="card-body">
-                        <h5 class="card-title">Consultoria Tributária</h5>
-                        <p class="card-text">Maximiza economia fiscal, oferece conformidade fiscal, orientação estratégica, e otimiza o planejamento tributário para empresas, garantindo eficiência financeira.</p>
-                    </div>
-                    <div class="card-footer">
-                        <small class="text-muted">Planejamento Tributário; Análise de Riscos Fiscais; Orientação Fiscal; Preparação e Revisão de Declarações Fiscais; Gestão de Benefícios Fiscais; Resolução de Conflitos Fiscais; Atualizações Legais; Estratégias de Expansão; Treinamento Interno.</small>
-                    </div>
-                </div>
-            </div>
-            <br>
-            <hr>
-        </div>
-        
-        <p class="table-dark text-center text-justify">Av. Nações Unidas, 10.088 - Pinheiros - São Paulo - SP. Telefone: (11) 3000-3000 - Email: moraes.contabilidade@email.com.</p>
-    </div>
-    
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
 </html>
