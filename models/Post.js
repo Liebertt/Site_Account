@@ -1,22 +1,10 @@
-const db = require('./db');
+const mongoose = require('mongoose');
 
-//criando a tabela postagens
+const PostSchema = new mongoose.Schema({
+    nome: String,
+    telefone: String,
+    email: String,
+    observacao: String
+}, { timestamps: true });
 
-const Post = db.sequelize.define('postagens', { 
-    nome:{
-type: db.Sequelize.STRING
-},
-telefone:{
-type: db.Sequelize.STRING
-},
-email:{
-    type: db.Sequelize.STRING
-    },
-    observacao:{
-        type: db.Sequelize.STRING
-        }
-});
-
-//Post.sync({force: true});
-
-module.exports = Post;
+module.exports = mongoose.model('Post', PostSchema);

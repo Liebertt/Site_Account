@@ -1,4 +1,80 @@
 <body>
+    <!-- POPUP para classificador -->
+<div class="popup-classificador">
+  <p><strong>👋 Quer abrir uma empresa?</strong></p>
+  <a href="/classificador">Clique aqui para saber o tipo ideal para você</a>
+  <button class="close-popup" onclick="fecharPopup()">×</button>
+</div>
+
+<style>
+  .popup-classificador {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #f8f9fa;
+    padding: 20px 20px 10px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    font-family: 'Segoe UI', sans-serif;
+    z-index: 1000;
+    animation: aparecer 0.6s ease;
+    max-width: 300px;
+  }
+
+  .popup-classificador a {
+    display: inline-block;
+    margin-top: 5px;
+    color: #007BFF;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  .popup-classificador a:hover {
+    text-decoration: underline;
+  }
+
+  .close-popup {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    border: none;
+    background: transparent;
+    font-size: 20px;
+    line-height: 1;
+    color: #888;
+    cursor: pointer;
+  }
+
+  @keyframes aparecer {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+</style>
+
+  .close-popup {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    border: none;
+    background: transparent;
+    font-size: 20px;
+    line-height: 1;
+    color: #888;
+    cursor: pointer;
+  }
+
+  @keyframes aparecer {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+
+<script>
+  function fecharPopup() {
+    document.querySelector('.popup-classificador').style.display = 'none';
+  }
+</script>
+
     <div class="container">
         <div class="jumbotron">
             <div class="container">

@@ -1,11 +1,10 @@
-const Sequelize = require('sequelize');
-//Conexão com o banco de dados
-const sequelize = new Sequelize('postsite','root','root',{ host: "localhost",
-port: "3306", dialect: 'mysql'
-});
+const mongoose = require('mongoose');
 
-//Vamos exportar as variáveis
-module.exports = { 
-    Sequelize: Sequelize, 
-    sequelize: sequelize
-}
+const dbURI = 'mongodb+srv://site_account_user:4U8OMPLtp2sFkdcQ@cluster0.kq5tp.mongodb.net/site_account?retryWrites=true&w=majority';
+
+mongoose.connect(dbURI, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true
+})
+.then(() => console.log('✅ Conectado ao MongoDB Atlas'))
+.catch((err) => console.error('❌ Erro de conexão:', err));
