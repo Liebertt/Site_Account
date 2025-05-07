@@ -3,7 +3,7 @@ const app = express();
 const handlebars = require('express-handlebars');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
-const Post = require('./models/post');
+const Post = require('./models/Post');
 const path = require('path');
 
 // Conexão com o MongoDB Atlas (substitua pela sua URL do MongoDB Atlas)
